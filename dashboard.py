@@ -96,19 +96,17 @@ with col1:
                                        value=start_savings,
                                        step=1)
 
-'''
 with col2:
     image = Image.open('/Users/winnie/Desktop/Green Station/dashboard.png')
     st.markdown(
         f"""
             <div style="display: flex; justify-content: flex-end;">
-                <img src="data:image/png;base64,{base64.b64encode(open('/Users/winnie/Desktop/Green Station/dashboard.png', 'rb').read()).decode()}" 
+                <img src="data:image/png;base64,{base64.b64encode(open('dashboard.png', 'rb').read()).decode()}" 
                      style="width: 100%; height: 230px; transform: scale(1.2, 0.9);">
             </div>
             """,
         unsafe_allow_html=True
     )
-'''
 
 
 # metrics calculation
