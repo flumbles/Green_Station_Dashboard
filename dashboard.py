@@ -96,6 +96,7 @@ with col1:
                                        value=start_savings,
                                        step=1)
 
+'''
 with col2:
     image = Image.open('/Users/winnie/Desktop/Green Station/dashboard.png')
     st.markdown(
@@ -107,7 +108,7 @@ with col2:
             """,
         unsafe_allow_html=True
     )
-
+'''
 
 
 # metrics calculation
