@@ -8,6 +8,9 @@ st.set_page_config(page_title="Green Station Dashboard", layout="wide")
 # Custom CSS
 st.markdown("""
 <style>
+    [data-testid="stToolbar"] {
+        background-color: #f1f9e1 !important;
+    }
     .stApp {
         background-color:#f1f9e1;
     }
