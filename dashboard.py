@@ -8,8 +8,15 @@ st.set_page_config(page_title="Green Station Dashboard", layout="wide")
 # Custom CSS
 st.markdown("""
 <style>
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
     .stApp {
         background-color:#f1f9e1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
     .main .block-container {
         padding-top: 2rem;
@@ -109,6 +116,7 @@ with col2:
     )
 
 
+
 # metrics calculation
 annual_savings = int(monthly * 12 * stations * (savings_percentage / 100))
 energy_savings = int((monthly * 12 * (savings_percentage / 100) * stations) / electricity_tariff)
@@ -205,7 +213,9 @@ with col1:
         title="ROI vs Percentage Savings",
         xaxis_title="Percentage Savings",
         yaxis_title="ROI (%)",
-        height=400
+        height=400,
+        plot_bgcolor='#f1f9e1',
+        paper_bgcolor='#f1f9e1'
     )
     st.plotly_chart(fig_roi, use_container_width=True)
 
@@ -216,7 +226,9 @@ with col2:
         title="Payback Period vs Percentage Savings",
         xaxis_title="Percentage Savings",
         yaxis_title="Years",
-        height=400
+        height=400,
+        plot_bgcolor='#f1f9e1',
+        paper_bgcolor='#f1f9e1'
     )
     fig_payback.update_yaxes(range=[0, 20])  # Limit to 20 years
     st.plotly_chart(fig_payback, use_container_width=True)
@@ -228,6 +240,8 @@ with col3:
         title="Annual Savings vs Percentage Savings",
         xaxis_title="Percentage Savings",
         yaxis_title="Annual Savings",
-        height=400
+        height=400,
+        plot_bgcolor='#f1f9e1',
+        paper_bgcolor='#f1f9e1'
     )
     st.plotly_chart(fig_annual, use_container_width=True)
