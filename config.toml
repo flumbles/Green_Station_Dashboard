@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#c2e875"  # This is the light green color from your sidebar
+backgroundColor = "#f1f9e1"  # This is the background color you're using
+secondaryBackgroundColor = "#f1f9e1"  # This will change the top bar color
+textColor = "#000000"
+font = "sans serif"
