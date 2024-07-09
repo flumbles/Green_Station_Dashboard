@@ -57,7 +57,7 @@ st.markdown("""
 
 # Sidebar inputs
 st.sidebar.title("Project Inputs")
-monthly = st.sidebar.number_input("Monthly Air-Conditioning Energy Consumption Cost ($)", value=150000)
+monthly = st.sidebar.number_input("Monthly Air-Conditioning Energy Consumption Cost ($)", value=15000)
 stations = st.sidebar.number_input("Number of Stations", 1, 100, 1)
 capex = st.sidebar.number_input("CAPEX (One-time cost)", min_value=0.0, value=15000.0, step=1.00)
 opex = st.sidebar.number_input("OPEX (Yearly cost)", min_value=0.0, value=5000.0)
