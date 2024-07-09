@@ -97,7 +97,7 @@ with col1:
                                        step=1)
 
 with col2:
-    image = Image.open('/Users/winnie/Desktop/Green Station/dashboard.png')
+    image = Image.open('dashboard.png')
     st.markdown(
         f"""
             <div style="display: flex; justify-content: flex-end;">
