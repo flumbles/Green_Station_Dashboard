@@ -45,7 +45,7 @@ st.markdown("""
         font-size: 16px;
         color: #666;
     }
-    [data-testid="stSidebar"] { # sidebar color
+    [data-testid="stSidebar"] {
         background-color:#c2e875;
     }
     .stSlider {
