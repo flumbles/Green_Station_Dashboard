@@ -11,7 +11,7 @@ st.markdown("""
     header {visibility: hidden;}
     footer {visibility: hidden;}
     .stApp {
-        background-color:#f1f9e1;
+        background-color:black;
         position: absolute;
         top: 0;
         left: 0;
