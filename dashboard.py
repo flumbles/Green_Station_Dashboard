@@ -11,7 +11,7 @@ st.markdown("""
     header {visibility: hidden;}
     footer {visibility: hidden;}
     .stApp {
-        background-color:black;
+        background-color: #f1f9e1; //changes the main block background (everything but sidebar)
         position: absolute;
         top: 0;
         left: 0;
@@ -25,7 +25,7 @@ st.markdown("""
         padding-right: 5rem;
     }
     .metric-card {
-        background-color: white;
+        background-color: black; 
         border-radius: 5px;
         padding: 15px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
