@@ -11,7 +11,7 @@ st.markdown("""
     header {visibility: hidden;}
     footer {visibility: hidden;}
     .stApp {
-        background-color: #f1f9e1; //changes the main block background (everything but sidebar)
+        background-color: #f1f9e1; # changes the main block background (everything but sidebar)
         position: absolute;
         top: 0;
         left: 0;
@@ -24,8 +24,8 @@ st.markdown("""
         padding-left: 5rem;
         padding-right: 5rem;
     }
-    .metric-card {
-        background-color: black; 
+    .metric-card {  # to change the background for each stat (all the cards)
+        background-color: white;
         border-radius: 5px;
         padding: 15px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -45,7 +45,7 @@ st.markdown("""
         font-size: 16px;
         color: #666;
     }
-    [data-testid="stSidebar"] {
+    [data-testid="stSidebar"] { # sidebar color
         background-color:#c2e875;
     }
     .stSlider {
@@ -75,12 +75,12 @@ if end_savings < start_savings:
     end_savings = start_savings
 
 # main content
-col1, col2 = st.columns([2, 1])  # Adjust the ratio as needed
+col1, col2 = st.columns([2, 1])  # Adjust the ratio as needed, split into 2 columns, right with title and slider, left with image. adjust accordingly
 
 with col1:
-    st.markdown("<h1 style='text-align: left; font-size: 40px;'>Sustainability Project Evaluation Dashboard</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: left; font-size: 40px;'>Sustainability Project Evaluation Dashboard</h1>", unsafe_allow_html=True) # Main Title
     if start_savings == end_savings:
-        savings_percentage = start_savings  # if they're equal, just use that value
+        savings_percentage = start_savings  # if they're equal, just use that value, no slider
         st.markdown(f"""
                 <p style='font-size: 24px; font-weight: bold; color: #637b37;'>
                     Savings Percentage: {savings_percentage}%
@@ -104,7 +104,7 @@ with col1:
                                        step=1)
 
 with col2:
-    image = Image.open('dashboard.png')
+    image = Image.open('dashboard.png') # For the image
     st.markdown(
         f"""
             <div style="display: flex; justify-content: flex-end;">
@@ -117,7 +117,7 @@ with col2:
 
 
 
-# metrics calculation
+# metrics calculation, adjust formulas as needed
 annual_savings = int(monthly * 12 * stations * (savings_percentage / 100))
 energy_savings = int((monthly * 12 * (savings_percentage / 100) * stations) / electricity_tariff)
 flats_equivalent = energy_savings / 4000
@@ -182,7 +182,7 @@ with col2:
 # for plots
 col1, col2, col3 = st.columns(3)
 
-
+# adjust as needed
 def calculate_roi(savings_percentage):
     annual_savings = monthly * 12 * stations * (savings_percentage / 100)
     return ((annual_savings * 15) / (capex + opex * 15)) * 100
@@ -206,6 +206,7 @@ roi_values = [calculate_roi(sp) for sp in savings_percentages]
 payback_values = [calculate_payback(sp) for sp in savings_percentages]
 annual_values = [calculate_annual(sp) for sp in savings_percentages]
 
+#Change graphs accordingly
 # ROI graph
 with col1:
     fig_roi = go.Figure(data=[go.Scatter(x=savings_percentages, y=roi_values, mode='lines+markers', line=dict(color='#637b37', width=2), marker=dict(color='#637b37', size=6))])
