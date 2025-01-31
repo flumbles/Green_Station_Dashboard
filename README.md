@@ -30,6 +30,9 @@ The main dashboard displays calculated outcomes including:
 
 This tool enables quick evaluation of sustainability business cases by visualizing both financial returns and environmental impact metrics in an accessible format.
 
+You can access it through this link here: https://greenstationdashboard.streamlit.app/
+TO NOTE: The link may be expired if it has not been accessed in a while.
+
 
 
 <img width="1460" alt="image" src="https://github.com/user-attachments/assets/5b7b6ed2-35f4-4c00-96f2-d9fbfcc4e867" />
