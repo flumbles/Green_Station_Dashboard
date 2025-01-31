@@ -32,4 +32,5 @@ This tool enables quick evaluation of sustainability business cases by visualizi
 
 
 
-<img width="1454" alt="image" src="https://github.com/user-attachments/assets/8ad62dbc-2705-4672-a633-e377ccdfcc3c" />
+<img width="1460" alt="image" src="https://github.com/user-attachments/assets/5b7b6ed2-35f4-4c00-96f2-d9fbfcc4e867" />
+
