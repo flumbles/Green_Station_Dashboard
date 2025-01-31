@@ -28,9 +28,8 @@ The main dashboard displays calculated outcomes including:
   - Payback Period vs Percentage Savings
   - Annual Savings vs Percentage Savings
 
-<img width="1462" alt="image" src="https://github.com/user-attachments/assets/d7d8b1b1-ac1c-47e2-9769-4fd6b5ab1625" />
-
-
-
 This tool enables quick evaluation of sustainability business cases by visualizing both financial returns and environmental impact metrics in an accessible format.
+
+
+
 <img width="1454" alt="image" src="https://github.com/user-attachments/assets/8ad62dbc-2705-4672-a633-e377ccdfcc3c" />
