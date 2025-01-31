@@ -7,8 +7,8 @@ A collapsible sidebar containing key input parameters:
   
   - Monthly air-conditioning energy costs per station ($)
   - Number of stations
-  - One-time capital expenditure (CAPEX)
-  - Annual operating expenses (OPEX)
+  - One-time capital expenditure (CapEx)
+  - Annual operating expenses (OpEx)
   - Electricity tariff rates ($/kWh)
   - Reference consumption metrics:
     - Average 4-room flat energy usage (kWh)
